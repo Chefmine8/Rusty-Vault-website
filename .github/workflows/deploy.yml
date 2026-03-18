@@ -1,0 +1,22 @@
+name: Déploiement en Production
+
+on:
+  push:
+    branches:
+      - main # Remplacez par le nom exact de votre branche si c'est "master" ou "prod"
+
+jobs:
+  deploy:
+    runs-on: self-hosted # C'est ici qu'on dit d'utiliser VOTRE serveur
+    
+    steps:
+      - name: Mise à jour des fichiers sur le serveur
+        run: |
+          # On se place dans le dossier contenant votre clone Git
+          cd /opt/mon-site-web/html
+          
+          # On annule d'éventuelles modifications accidentelles sur le serveur
+          git reset --hard
+          
+          # On récupère le code de GitHub
+          git pull origin main
