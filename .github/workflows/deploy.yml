@@ -20,3 +20,6 @@ jobs:
           
           # On récupère le code de GitHub
           git pull origin main
+
+          npm install
+          npm run build
