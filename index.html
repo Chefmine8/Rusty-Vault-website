@@ -1,47 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" data-key="author" content="Rusty Vault">
-    <meta name="description" data-key="description" content="Une page d'accueil du site web de Rusty Vault">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="images/Logo.png">
-    <title>Rusty Vault</title>
-</head>
-<body>
-<nav class="nav_barre">
-    <img src="images/Logo.png" class="Logo">
-    <a href="index.html" id="page-actuel" >Home</a>
-    <a href="about.html" >About Team</a>
-    <a href="dl.html" >Downloads</a>
-
-</nav>
-<main>
-    <section>
-	<p>In the software industry, protecting intellectual property is extremely important. An unprotected binary is easy to analyze, which means innovations achieved through R&D can be easily stolen, paid applications can be compromised, and unauthorized modifications can be freely distributed.</p>
-
-	<p>Developed by the <strong>Stras4Ever</strong> group, <strong>Rusty Vault</strong> is a binary protection project designed to counter these threats and secure your applications.</p>
-
-	<h2>Our Core Features</h2>
-    	<p>Our project focuses on several priority technical layers to complicate the work of attackers :</p>
-    		<ul>
-		        <li><strong>Packing:</strong> A basic packer designed for Rust source code or compiled binaries.</li>
-		        <li><strong>Static Obfuscation:</strong> This involves parsing the code, removing symbols, renaming variables, and encrypting strings to prevent simple reading.</li>
-		        <li><strong>Anti-Debug Security:</strong> We use available APIs and debugging indicators to detect analysis tools and virtual environments, such as VirtualBox, VMware, and x64dbg.</li>
-		</ul>
-
-    	<h2>Advanced Protections</h2>
-    	<p>Depending on our development progress, Rusty Vault explores optional, high-level protection implementations:</p>
-    		<ul>
-		        <li><strong>Control Flow Flattening:</strong> A custom implementation to work with <code>rustc</code> and its different profiles, breaking the program's linear logic.</li>
-		        <li><strong>IAT/GOT Hooking:</strong> Parsing the IAT/GOT and modifying offsets at runtime.</li>
-		        <li><strong>Code Virtualization:</strong> Implementing a virtual machine to pack the binary.</li>
-		</ul>
-</section>
-</main>
-<footer>
-    <div style="text-align: center;font-size:x-large;">
-        Rusty Vault © 2025-2026
-    </div>
-</footer>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rusty-Vault Website Development</title>
+    <meta name="description" content="Protection avancée de binaires Rust avec obfuscation, anti-debug et techniques d'injection modernes" />
+    <meta property="og:image" content="https://bolt.new/static/og_default.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
