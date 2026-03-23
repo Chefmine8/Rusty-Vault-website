@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 export default function Hero() {
   const [text, setText] = useState('');
-  const fullText = '$ cargo run --release';
+  const fullText = '$ cargo run --bin builder <Payload path>';
   const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
