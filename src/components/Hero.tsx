@@ -81,10 +81,6 @@ export default function Hero() {
             Voir sur GitHub
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
-
-          <button className="flex items-center gap-3 px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl font-semibold transition-all hover:scale-105">
-            Documentation
-          </button>
         </div>
 
         <div className="grid grid-cols-3 gap-8 mt-20 max-w-2xl mx-auto">
