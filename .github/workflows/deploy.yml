@@ -13,7 +13,7 @@ jobs:
       - name: Mise à jour des fichiers sur le serveur
         run: |
           # On se place dans le dossier contenant votre clone Git
-          cd ${{ vars.DEPLOY_PATH }}
+          cd ${{ secrets.DEPLOY_PATH }}
           
           # On annule d'éventuelles modifications accidentelles sur le serveur
           git reset --hard
