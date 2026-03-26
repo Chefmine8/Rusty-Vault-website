@@ -7,6 +7,14 @@ import Team from './components/Team';
 import Footer from './components/Footer';
 
 function App() {
+  import logo from '../images/groupe.png'
+  function Header() {
+    return (
+      <nav>
+        <img src={logo} alt="Rusty Vault Logo" className="h-12" />
+      </nav>
+    )
+  }
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
