@@ -5,9 +5,9 @@ import Features from './components/Features';
 import TechStack from './components/TechStack';
 import Team from './components/Team';
 import Footer from './components/Footer';
+import logo from '../images/groupe.png'
 
 function App() {
-  import logo from '../images/groupe.png'
   function Header() {
     return (
       <nav>
