@@ -21,8 +21,8 @@ const team = [
   },
   {
     name: 'AAllmmaattrrii',
-    role: 'Fils de pute',
-    bio: "Gros enculé qui pense que doubler les lettres de son pseudo c'est marrrant",
+    role: 'Responsable Anti-Debug',
+    bio: "Spécialiste en anti debug (meme empress a peur)",
     specialty: 'Research & Development',
     image: 'https://github.com/Chefmine8/Rusty-Vault-website/blob/main/images/max.png?raw=true',
     github: 'https://github.com/Max67220',
